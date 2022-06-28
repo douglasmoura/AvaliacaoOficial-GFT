@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
+
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -9,7 +9,6 @@ public class App {
         for (int i = 3; i <= 999; i++) {
             if(sePrimo(i)){
             primos.add(i);
-            primos = primos.stream().collect(Collectors.toList());
             }
         }  
         System.out.println(primos);

@@ -3,14 +3,15 @@ import java.util.Date;
 public class Titulo  implements IRecebivel{
   
     private Integer tipo;
+    private Double valor;
+    private Date prazoVencimento;
+    
     public Titulo(Integer tipo, Double valor, Date prazoVencimento) {
         this.tipo = tipo;
         this.valor = valor;
         this.prazoVencimento = prazoVencimento;
     }
 
-    private Double valor;
-    private Date prazoVencimento;
 
     public Integer getTipo() {
         return tipo;
