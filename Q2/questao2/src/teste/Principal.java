@@ -14,7 +14,7 @@ public class Principal {
                 Date date = df.parse("08/6/2022");
                 Cheque cheque = new Cheque(30,2500.00,date);
                 Promissoria promissoria = new Promissoria(60,2500.00,date);
-                Titulo titulo = new Titulo(90,2500.00,date);
+                Titulo titulo = new Titulo(120,2500.00,date);
 
                 cheque.calcularValorRecebivel(cheque.getValor());
                 promissoria.calcularValorRecebivel(promissoria.getValor());

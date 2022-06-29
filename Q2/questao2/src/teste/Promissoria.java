@@ -38,7 +38,7 @@ public class Promissoria implements IRecebivel{
 
     @Override
     public void calcularValorRecebivel(Double valor) {
-    
+        Integer cont = 0;
         Double resultado = 0.0;
         setValor(valor);
         if(getTipo() <= 30){
@@ -53,7 +53,11 @@ public class Promissoria implements IRecebivel{
         System.out.println(resultado);
 
         }else if(getTipo() > 90){
-            resultado = getValor()-(getValor() * 0.085) - (getValor()* 0.02);
+
+            cont = getTipo() / 30;
+            cont = cont - 2;
+            
+            resultado = getValor()-(getValor() * 0.085) - (getValor()*(cont * 0.02));
         System.out.println(resultado); 
 
         }
